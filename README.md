@@ -38,3 +38,11 @@ Curso Básico de MongoDB Curso Básico de MongoDB
   - Nos movemos a [MongoDB](https://www.mongodb.com/)
   - Products -> Atlas -> [Try Free](https://www.mongodb.com/cloud/atlas/register) rellenamos el formulario y nos registramos.
   - Creamos nuestro cluster.
+
+## Instalación MongoDB Mac/Linux o Uso de Docker
+  - Ingresa a este [Link](https://www.mongodb.com/try/download/community) y descarga la última versión de MongoDB.
+  - Repo para Ubuntu 20.04 .deb[Link](https://repo.mongodb.org/apt/ubuntu/dists/focal/mongodb-org/5.0/multiverse/binary-amd64/mongodb-org-shell_5.0.9_amd64.deb) link de los pasos [instalación](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04-es)
+  - Correr MongoDB con un contenerdor de Docker:
+    - Corremos el contenedor "docker run --name contenedormongodb -d mongo:lastet" [link](https://hub.docker.com/_/mongo).
+    - Ejectuamos "docker exec -it contenedormongodb mongo" para entrar al contenedor.
+    - Ya dentro del contenedor hacemos la conexion con el host de nuestra base de datos. "mongosh "mongodb+srv://curso-mongo-platzi.oevehli.mongodb.net/basedatospreviaconfig" --apiVersion 1 --username userprevioconfig" 
