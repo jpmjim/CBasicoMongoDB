@@ -20,3 +20,21 @@ Curso Básico de MongoDB Curso Básico de MongoDB
   Por ser una base de datos distribuida podemos hablar no de uno sino de varios servidores, lo que conocemos como el Cluster de MongoDB. Gracias a esto obtenemos una gran escalabilidad de forma horizontal (escalabilidad en cantidad de servidores).
 
   MongoDB es “Schema Less” lo que permite que nuestros documentos tengan estructuras diferentes sin afectar su funcionamiento, algo que no podemos hacer con las tablas de las bases de datos relacionales. Su lenguaje para realizar queries, índices y agregaciones es muy expresivo.
+
+## MongoDB Atlas
+  MongoDB Atlas es una herramienta de MongoDB que nos permite crear una base de datos en la nube.
+  Tenemos varios proveedores que nos permiten utilizar o alquilar MongoDB como servicio y en este caso vamos a usar [MongoDB Atlas](https://www.mongodb.com/atlas/database) por ser desarrollado por las mismas personas que desarrollan MongoDB.
+
+  MongoDB Atlas tiene las siguientes características:
+
+  - Aprovisionamiento automático de clusters con MongoDB
+  - Alta disponibilidad
+  - Altamente escalable
+  - Seguro
+  - Disponible en AWS, GCP y Microsoft Azure
+  - Fácil monitoreo y optimización
+
+  Creamos nuestro primer cluster en MongoDB Atlas:
+  - Nos movemos a [MongoDB](https://www.mongodb.com/)
+  - Products -> Atlas -> [Try Free](https://www.mongodb.com/cloud/atlas/register) rellenamos el formulario y nos registramos.
+  - Creamos nuestro cluster.
