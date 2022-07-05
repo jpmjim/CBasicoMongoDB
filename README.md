@@ -175,3 +175,17 @@ Conexion interfaz grafica
   MinKey: `new MinKey()`
   MaxKey: `new MaxKey()`
   ```
+
+## ¿Qué son los esquemas y las relaciones?
+  Los esquemas son la forma en que organizamos nuestros documentos en nuestras colecciones. MongoDB no impone ningún esquema pero podemos seguir buenas prácticas y estructurar nuestros documentos de forma parecida (no igual) para aprovechar la flexibilidad y escalabilidad de la base de datos sin aumentar la complejidad de nuestras aplicaciones.
+
+  Las relaciones son la forma en que nuestras entidades o documentos sen encuentran enlazados unos con otros. Por ejemplo: Una carrera tiene multiples cursos y cada curso tiene multiples clases.
+
+  ### MongoDB 🆚 SQL: [MongoDB vs SQL](https://platzi.com/blog/mongo-vs-sql/)
+
+  - 💃 MongoDB tiene mucha flexibilidad y no nos impone seguir una estructura o esquema bien definido.
+  - 🙅 SQL nos impone una estructura bien definida a más no poder; es super no-flexible.
+  - 🍻 Con MongoDB es más fácil empezar y añadir nuevas funcionalidades.
+  - ⏲ Con SQL es más demorado de empezar porque debemos tener el orden super claro siempre. Todos los elementos deben tener los mismos elementos y todos deben ser del mismo tipo. Si queremos agregar un nuevo campo debemos añadirlo en todas partes con un valor pode defecto, aunque no lo necesitemos.
+  - 🤒 Si no seguimos buenas prácticas en MongoDB, vamos a necesitar queries ultra-complejas, demoradas y una visita diaria al psicólogo 😱.
+  - 💆 El orden impuesto de SQL no es por nada. Las queries son fáciles de entender porque todo sigue su orden y tranquilidad. Aunque, implementar nuevas features toma su buen tiempo 🤔.
