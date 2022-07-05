@@ -98,4 +98,22 @@ Conexion interfaz grafica
   - Swift: pod install mongodb
   - Kotlin: addRepository "MongoDB"
 
+## Bases de datos, Colecciones y Documentos en MongoDB
+  Las Bases de Datos son los contenedores físicos para nuestras colecciones. Cada base de datos tiene un archivo propio en el sistema de archivos de nuestra computadora o servidor y un Cluster puede tener múltiples bases de datos.
 
+  Las Colecciones son agrupaciones de documentos. Son equivalentes a las tablas en bases de datos relacionales pero NO nos imponen un esquema o estructura rígida para guardar información.
+
+  Los Documentos son registros dentro de las colecciones. Son la unidad básica de MongoDB y son análogos a los objetos JSON pero en realidad son BSON.
+
+  ![](http://4.bp.blogspot.com/-edz2_QrFvCE/UnzBhKZE3FI/AAAAAAAAAEs/bTEsqnZFTXw/s400/SQL-MongoDB+Correspondence.PNG)
+
+  [JSON and BSON](https://www.mongodb.com/json-and-bson)
+
+  - JSON: Es una representación textual de un objeto.
+  - BSON: Es una representación binaria de un objeto.
+
+  BSON está diseñado para ser eficiente en el espacio, pero en algunos casos no es mucho más eficiente que JSON. En algunos casos, BSON usa incluso más espacio que JSON. La razón de esto es otro de los objetivos de diseño de BSON: la capacidad de desplazamiento. BSON agrega información “adicional” a los documentos, como la longitud de cadenas y subobjetos. Esto hace que el recorrido sea más rápido.
+
+  BSON también está diseñado para ser rápido de codificar y decodificar. Por ejemplo, los enteros se almacenan como enteros de 32 (o 64) bits, por lo que no necesitan ser analizados desde y hacia el texto. Esto utiliza más espacio que JSON para los enteros pequeños, pero es mucho más rápido de analizar.
+
+  Además de la compacidad, BSON agrega tipos de datos adicionales no disponibles en JSON, especialmente los tipos de datos BinData y Date.
