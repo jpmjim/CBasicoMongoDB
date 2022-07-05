@@ -139,3 +139,9 @@ Conexion interfaz grafica
 
   ![](https://static.platzi.com/media/user_upload/Captura-2d4be618-302d-42b6-ab32-8723a04643a6.jpg)
   ![](https://static.platzi.com/media/user_upload/Captura2-fc030661-4be4-4d0e-ac2a-c751a27d2aa2.jpg)
+
+## Operaciones CRUD desde Compass
+  Applicaciones mejorar el uso de Mongo DB
+  - [MongoDB Compass](https://www.mongodb.com/compass)
+  - Para Visual Code [MongoDB for VS Code](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode)
+  - [Navicat](https://www.navicat.com/en/products/navicat-for-mongodb) 
