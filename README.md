@@ -189,3 +189,8 @@ Conexion interfaz grafica
   - ⏲ Con SQL es más demorado de empezar porque debemos tener el orden super claro siempre. Todos los elementos deben tener los mismos elementos y todos deben ser del mismo tipo. Si queremos agregar un nuevo campo debemos añadirlo en todas partes con un valor pode defecto, aunque no lo necesitemos.
   - 🤒 Si no seguimos buenas prácticas en MongoDB, vamos a necesitar queries ultra-complejas, demoradas y una visita diaria al psicólogo 😱.
   - 💆 El orden impuesto de SQL no es por nada. Las queries son fáciles de entender porque todo sigue su orden y tranquilidad. Aunque, implementar nuevas features toma su buen tiempo 🤔.
+
+## Relaciones entre documentos
+  [Model Relationships Between Documents](https://www.mongodb.com/docs/v6.0/applications/data-models-relationships/)
+  - One to one: Documentos embebidos
+  - One to many: Documentos embebidos cuando la información no va a cambiar muy frecuentemente y referencias cuando si.
