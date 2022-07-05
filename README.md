@@ -194,3 +194,7 @@ Conexion interfaz grafica
   [Model Relationships Between Documents](https://www.mongodb.com/docs/v6.0/applications/data-models-relationships/)
   - One to one: Documentos embebidos
   - One to many: Documentos embebidos cuando la información no va a cambiar muy frecuentemente y referencias cuando si.
+
+## Operadores para realizar queries y proyecciones
+  - [Query Documents](https://www.mongodb.com/docs/v6.0/tutorial/query-documents/)
+  - [Query and Projection Operators](https://www.mongodb.com/docs/v6.0/reference/operator/query/)
