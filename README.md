@@ -46,3 +46,36 @@ Curso Básico de MongoDB Curso Básico de MongoDB
     - Corremos el contenedor "docker run --name contenedormongodb -d mongo:lastet" [link](https://hub.docker.com/_/mongo).
     - Ejectuamos "docker exec -it contenedormongodb mongo" para entrar al contenedor.
     - Ya dentro del contenedor hacemos la conexion con el host de nuestra base de datos. "mongosh "mongodb+srv://curso-mongo-platzi.oevehli.mongodb.net/basedatospreviaconfig" --apiVersion 1 --username userprevioconfig" 
+
+## Mongo Shell, configuración de clientes "Conexion desde terminal o forma gráfica"
+  Desde la terminal podemos conectarnos a nuestra base de datos con el siguiente comando:
+  ``` 
+  mongo "mongodb+srv://curso-mongo-platzi.oevehli.mongodb.net" --username jpmjim
+  ```
+  Y ingresas la contraseña.
+  Comandos:
+  - `show dbs`: Muestra las bases de datos.
+  - `use databse`: Crea una base de datos.
+  - Crear una colección:
+    ```
+    db.inventory.insertOne({ 
+      item: "canvas", 
+      qty: 100, tags: ["cotton"], 
+      size: { 
+        h: 28, 
+        w: 35.5, 
+        uom: "cm" 
+        } 
+    })
+    ```
+  - `show collections`: Muestra las colecciones.
+  - `db.inventory.findOne()`: Muestra un documento de la colección.
+
+Conexion interfaz grafica 
+  - Descargamos el instalador de MongoDBCompass: [Link](https://www.mongodb.com/download-center/compass)
+  - En la conexion solamente añadimos la URI
+  ```
+  mongodb+srv://jpmjim:<password>@curso-mongo-platzi.oevehli.mongodb.net/test
+  ```
+
+
