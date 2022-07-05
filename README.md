@@ -77,5 +77,25 @@ Conexion interfaz grafica
   ```
   mongodb+srv://jpmjim:<password>@curso-mongo-platzi.oevehli.mongodb.net/test
   ```
+## MongoDB + Drivers
+  [Drivers](https://www.mongodb.com/docs/drivers/drivers/)
+  ¿Qué son los drivers en MongoDB?
+  Son las librerías que utilizamos para comunicar nuestra aplicación con nuestra base de datos.
+  Sin nuestros drivers no podemos trabajar con nuestros cluster de base de datos.
+  📝
+  ¿Cómo agregar los drivers dentro de nuestro proyecto?
+  Usamos un gestor de dependencias. Lo agregamos en nuestro gestor de dependencia; si usamos NodeJS, utilizamos ‘npm install mongodb --save’.
+
+  Instalación de los drivers de MongoDB en diferentes lenguajes:
+  - NodeJS: npm install mongodb
+  - Python: pip install pymongo
+  - Java: mvn install:install-file -Dfile=<path-to-driver> -DgroupId=com.mongodb.driver -DartifactId=mongodb-driver -Dversion=<version> -Dpackaging=jar
+  - C#: NuGet install MongoDB.Driver
+  - Go: go get github.com/mongodb/mongo-go-driver/mongo
+  - Ruby: gem install mongo
+  - PHP: composer require mongodb/mongodb
+  - Elixir: mix deps.add mongodb
+  - Swift: pod install mongodb
+  - Kotlin: addRepository "MongoDB"
 
 
