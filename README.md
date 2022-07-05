@@ -145,3 +145,33 @@ Conexion interfaz grafica
   - [MongoDB Compass](https://www.mongodb.com/compass)
   - Para Visual Code [MongoDB for VS Code](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode)
   - [Navicat](https://www.navicat.com/en/products/navicat-for-mongodb) 
+
+## Tipos de datos
+  [Documentación de tipos de datos](https://docs.mongodb.com/manual/reference/bson-types/)
+  - Strings: Nos sirven para guardar textos.
+  - Boolean: Información cierta o falsa (true y false).
+  - ObjectId: Utilizan el tiempo exacto en el que generamos la consulta para siempre generan IDs únicos. Existen en BSON pero no en JSON.
+  - Date: Nos sirven para guardar fechas y hacer operaciones de rangos entre ellas.
+  Números: Doubles, Integers, Integers 64 bits y Decimals.
+  - Documentos Embebidos: Documentos dentro de otros documentos ({}).
+  - Arrays: Arreglos o listas de cualquier otro tipo de datos, incluso, de otras listas.
+  ```
+  String: `"hola"`
+  Number: `1`
+  Boolean: `true` o `false`
+  Null: `null`
+  Object: `{}`
+  Array: `[]`
+  Binary: `new Buffer("hola")`
+  Date: `new Date()`
+  Timestamp: `new Timestamp()`
+  RegExp: `/^hola/`
+  JavaScript: `function() {}`
+  JavaScriptWithScope: `{ $scope: { ... } }`
+  Int32: `new Int32()`
+  Timestamp: `new Timestamp()`
+  Int64: `new Int64()`
+  Decimal128: `new Decimal128()`
+  MinKey: `new MinKey()`
+  MaxKey: `new MaxKey()`
+  ```
