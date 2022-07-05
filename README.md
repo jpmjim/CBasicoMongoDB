@@ -117,3 +117,25 @@ Conexion interfaz grafica
   BSON también está diseñado para ser rápido de codificar y decodificar. Por ejemplo, los enteros se almacenan como enteros de 32 (o 64) bits, por lo que no necesitan ser analizados desde y hacia el texto. Esto utiliza más espacio que JSON para los enteros pequeños, pero es mucho más rápido de analizar.
 
   Además de la compacidad, BSON agrega tipos de datos adicionales no disponibles en JSON, especialmente los tipos de datos BinData y Date.
+
+## Operaciones CRUD desde la consola de MongoDB
+  Comandos: [Instrucciones y Comandos CRUD](https://static.platzi.com/media/public/uploads/crud_0540220d-88e9-447c-9e03-681375363137.txt)
+  - Conexión con el cluster de MongoDB Atlas `mongo "URL DE NUESTRO CLUSTER"` , (recuerda añadir tu IP a la lista de IPs permitidas para no tener problemas en esta parte).
+  Listar las bases de datos de nuestro cluster: show dbs.
+
+  - Seleccionar una base de datos: `use NOMBRE_BD`. Debemos crear por lo menos un documento si la base de datos es nueva porque MongoDB no crea bases de datos vacías.
+
+  - Recordar qué base de datos estamos usando: `db`.
+
+  - Listar las colecciones de nuestra base de datos: `show collections`.
+
+  - Crear una colección (opcional) y añadir un elemento en formato JSON: `db.NOMBRE_COLECCIÓN.insertOne({ ... })`. La base de datos responde `true` si la operación fue exitosa y crea el campo irrepetible de `_id` si nosotros no lo especificamos.
+
+  - Crear una colección (opcional) y añadir algunos elementos en formato JSON: `db.NOMBRE_COLECCIÓN.insertMany([{ ... }, { ... }])`. Recibe un array de elementos y devuelve todos los IDs de los elementos que se crearon correctamente.
+
+  - Encontrar elementos en una colección: `db.NOMBRE_COLECCIÓN.find()` Podemos aplicar filtros si queremos o encontrar solo el primer resultado con el método `findOne()`.
+
+  - Listar todos los posibles comandos que podemos ejecutar: `db.NOMBRE_COLECCIÓN.help()`.
+
+  ![](https://static.platzi.com/media/user_upload/Captura-2d4be618-302d-42b6-ab32-8723a04643a6.jpg)
+  ![](https://static.platzi.com/media/user_upload/Captura2-fc030661-4be4-4d0e-ac2a-c751a27d2aa2.jpg)
