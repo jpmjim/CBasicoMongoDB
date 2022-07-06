@@ -313,5 +313,24 @@ db.survey.find(
     Esto nos permitirá instalar todas las dependencias que necesitemos.
     En caso de que tengas algún error solo ejecuta el comando de nuevo, pip se encargará de solucionarlo en la primera incidencia.
 
+  - ¡Estableceremos las configuraciones finales para que nuestro proyecto empiece a funcionar!
 
+    Por último, para que el proyecto se ejecute sin errores es necesario exportar las variables de entorno que se muestran a continuación, simplemente ejecuta cada una en tu terminal:
+    ```
+    export FLASK_APP=platzi-api
+    export FLASK_ENV=development
+    export PLATZI_DB_URI="MONGO-URI"
+    ```
+    Debes reemplazar MONGO-URI por la URI de MongoDB atlas en el siguiente formato:
+    ```
+    mongodb+srv://<TU-USUARIO>:<TU-CONTRASEÑA>@<TU-ATLAS-URI>
+    ```
+    Ejemplo:
+    ```
+    mongodb+srv://m220student:m220password@mflix-5zlol.mongodb.net
+    ```
+    Cuando hayas ejecutado todas las variables de entorno ejecuta el siguiente comando para que la aplicación empiece a correr:
+    ```
+    flask run
+    ```
 
