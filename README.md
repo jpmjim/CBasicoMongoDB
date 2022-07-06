@@ -286,4 +286,23 @@ db.survey.find(
 
     Con eso ya deberías tener las solicitudes de prueba importadas en tu Postman.
 
-  
+  - Crearemos un entorno virtual con Python.
+    
+    Para crear nuestro ambiente virtual debemos ejecutar este comando desde dentro de la carpeta de nuestro proyecto si :
+    ```
+    sudo apt install python3.8-venv
+    python3 -m venv venv
+    ```
+    Con el ambiente creado, ahora debemos activarlo, para ello podemos hacerlo con el siguiente comando:
+    ```
+    windows: .\venv\Scripts\activate
+    linux: source venv/bin/activate
+    ```
+    Te puedes asegurar de que tu entorno virtual está activo viendo que a la izquierda o derecha de tu terminal aparece su nombre.
+
+    Para desactivar el ambiente virtual puedes lograrlo con el siguiente comando
+    ```
+    deactivate
+    ```
+
+
