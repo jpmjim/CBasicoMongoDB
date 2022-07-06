@@ -333,4 +333,6 @@ db.survey.find(
     ```
     flask run
     ```
-
+    Tenemos una aplicación que está corriendo en el puerto 5000, por lo que podemos ver el resultado en el siguiente [Link](http://localhost:5000/carreras).
+    
+    ![](https://i.ibb.co/3p6Vyg1/logrado.png)
