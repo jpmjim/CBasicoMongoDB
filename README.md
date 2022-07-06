@@ -304,5 +304,14 @@ db.survey.find(
     ```
     deactivate
     ```
+  - Instalaremos las dependencias de nuestro proyecto.
+
+    Ya que tenemos el ambiente virtual creado en nuestro proyecto debes activarlo para poder instalar las dependencias
+    ```
+    pip3 install -r requirements.txt
+    ```
+    Esto nos permitirá instalar todas las dependencias que necesitemos.
+    En caso de que tengas algún error solo ejecuta el comando de nuevo, pip se encargará de solucionarlo en la primera incidencia.
+
 
 
