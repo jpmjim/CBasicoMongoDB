@@ -268,3 +268,22 @@ db.survey.find(
   Map-Reduce: Nos permite definir funciones de JavaScript para ejecutar operaciones avanzadas. La función de map nos permite definir o “mappear” los campos que queremos usar y la función reduce nos permite ejecutar operaciones y devolver resultados especiales. Por ejemplo: podemos mappear algunos campos y calcular la cantidad de elementos que cumplen ciertas condiciones.
 
   Agregaciones de propósito único: Funciones ya definidas que nos ayudan a calcular un resultado especial pero debemos tener cuidado porque pueden mejorar o afectar el performance de la base de datos. Por ejemplo: count(), estimatedDocumentCount y distinct.
+
+## Configuración e instalación de dependencias para el proyecto PlatziMongo
+  - Descargaremos el código base de nuestro proyecto desde GitHub. [Repo](https://github.com/AERC18/platzi-mongo.)
+
+  - Instalaremos Postman para facilitarnos interactuar con nuestra API.
+
+    Ya que tenemos el código base de nuestra mini API descargado, ahora necesitamos una manera de comunicarnos con ella. Recuerda que este código que descargamos es de una aplicación backend que se comunicará con nuestra base de datos en Mongo, y como toda aplicación backend, esta necesita recibir solicitudes HTTP para realizar las acciones necesarias.
+    ```
+    sudo snap install postman
+    ```
+    [Link de Descarga](https://www.postman.com/downloads/)
+    
+    Despues de la instalación creamos un nuevo workspace en Postman donde importaremos un archivo JSON desde el siguiente [Link]( https://raw.githubusercontent.com/platzi/mongodb-2019/main/PlatziMongo.json) de esta manera.
+
+    ![](https://static.platzi.com/media/user_upload/Import%20collection-8ea28cb4-11f6-4390-948a-bceae4882450.jpg)
+
+    Con eso ya deberías tener las solicitudes de prueba importadas en tu Postman.
+
+  
