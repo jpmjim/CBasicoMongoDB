@@ -339,3 +339,51 @@ db.survey.find(
 
 ## Operaciones CRUD con Python y Pymongo
   Crear, consultar, actualizar y eliminar datos con el uso del driver pymongo.
+
+## Diseñando el esquema de clases, cursos y carreras
+  Vamos a usar tanto referencias como documentos embebidos para guardar la información de nuestros cursos y carreras. Vamos a crear una colección separada para los cursos y otra para las carreras. Esto significa que, si queremos la información de nuestros cursos, debemos consultar dos colecciones diferentes.
+
+  Para solucionar este problema vamos a guardar el nombre del curso junto con la referencia al curso en la colección de cursos. Así, cuando consultemos la colección de carreras, vamos a tener también los nombres. Recuerda que si cambie el nombre del curso debes actualizarlo en ambas colecciones.
+
+  ``` 
+  carreras.json
+  {
+    "_id": "62c763b63ce8b955387e099c",
+    "nombre": "Ingeniería en Sistemas Computacionales",
+    "descripcion": "Curso de Ingeniería en Sistemas Computacionales",
+    "cursos": [
+      {
+        "_id": "62c763b63ce8b955387e099d",
+        "nombre": "Curso de Python",
+      },
+      {
+        "_id": "62c763b63ce8b955387e099e",
+        "nombre": "Curso de JavaScript",
+      }
+    ]
+  }
+  ```
+  ```
+  cursos.json
+  {
+    "_id": "62c763b63ce8b955387e099d",
+    "nombre": "Curso de Python",
+    "descripcion": "Curso de Python",
+    "clases": [
+      {
+        "_id": "62c763b63ce8b955387e099f",
+        "orden": 1,
+        "nombre": "Clase 1",
+        "descripcion": "Clase 1 de Python",
+        "video": "url del video",
+      },
+      {
+        "_id": "62c763b63ce8b955387e09a0",
+        "orden": 2,
+        "nombre": "Clase 2",
+        "descripcion": "Clase 2 de Python",
+        "video": "url del video",
+      }
+    ]
+  }
+  ```
