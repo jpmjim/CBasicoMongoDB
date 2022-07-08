@@ -407,6 +407,12 @@ db.survey.find(
   - De texto
   - Hashed
 
+  Documentación:
+  [Basic Indexing in MongoDB](https://medium.com/@dugdun/basic-indexing-in-mongodb-8e776a5eb108)
+  [How to Speed-Up MongoDB Regex Queries by a Factor of up-to 10](https://medium.com/statuscode/how-to-speed-up-mongodb-regex-queries-by-a-factor-of-up-to-10-73995435c606)
+  [Query like A Pro — MongoDB Toolbox](https://codeburst.io/query-like-a-pro-mongodb-shell-toolbox-3c926cec4cbd)
+  [MongoDB Indexing](https://www.mongodb.com/docs/v6.0/indexes/)
+
   Comandos de consola:
   
   Vemos lista de base de datos
@@ -434,5 +440,20 @@ db.survey.find(
   ```
   db.cursos.find({$text: {$search: "aws"}}, {nombre: 1})
   ```
+
+## Recomendaciones de Arquitectura y Paso a Producción
+  [MongoDB Architecture](https://www.mongodb.com/mongodb-architecture)
+  - Usar proveedores cloud con alta disponibilidad: AWS, Google Cloud o Azure son muy buenas opciones
+  - No te compliques pensando en administración de servidores con MongoDB, servicios como MongoDB Atlas o mlab son muy buenas opciones
+  - Guardar las credenciales en variables de entorno o archivos de configuración fuera del proyecto
+  - Asegura que tu cluster se encuentra en la mis región del proveedor que tu aplicación
+  - Has VPC peering entre la VPC de tu aplicación y la VPC de tu cluster
+  - Cuida la lista de IPs blancas
+  - Puedes habilitar la autenticación en dos pasos
+  - Actualiza constantemente tu versión de MongoDB
+  - Separa los ambientes de desarrollo, test y producción
+  - Habilita la opción de almacenamiento encriptado
+
+  ![](https://static.platzi.com/media/user_upload/nexus-architecture-3669727c-100b-4d2b-baf7-39f51f48ce39.jpg)
 
 
