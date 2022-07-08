@@ -345,7 +345,7 @@ db.survey.find(
 
   Para solucionar este problema vamos a guardar el nombre del curso junto con la referencia al curso en la colección de cursos. Así, cuando consultemos la colección de carreras, vamos a tener también los nombres. Recuerda que si cambie el nombre del curso debes actualizarlo en ambas colecciones.
 
-  ``` 
+  ``` JSON
   carreras.json
   {
     "_id": "62c763b63ce8b955387e099c",
@@ -363,7 +363,7 @@ db.survey.find(
     ]
   }
   ```
-  ```
+  ```JSON
   cursos.json
   {
     "_id": "62c763b63ce8b955387e099d",
@@ -387,3 +387,7 @@ db.survey.find(
     ]
   }
   ```
+
+## Ejecución de queries
+  Nos vamos a nuestro postman para ejecutar nuestras queries.
+  - Crear, consultar y borrado de  cursos.
