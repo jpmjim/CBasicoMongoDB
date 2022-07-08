@@ -391,3 +391,7 @@ db.survey.find(
 ## Ejecución de queries
   Nos vamos a nuestro postman para ejecutar nuestras queries.
   - Crear, consultar y borrado de  cursos.
+
+## Relaciones entre "curso a carrera"
+  - Agregamos un curso a una carrera.
+  - Borramos curso a una carrera.
