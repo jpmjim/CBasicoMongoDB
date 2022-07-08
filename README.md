@@ -395,3 +395,44 @@ db.survey.find(
 ## Relaciones entre "curso a carrera"
   - Agregamos un curso a una carrera.
   - Borramos curso a una carrera.
+
+## Consultas más rápidas con Índices
+  Los índices nos ayudan a que nuestras consultas sean más rápidas porque, sin ellos, MongoDB debería escanear toda la colección en busca de los resultados.
+  Tipos de índices:
+
+  - De un solo campo
+  - Compuestos
+  - Multi-llave
+  - Geoespaciales
+  - De texto
+  - Hashed
+
+  Comandos de consola:
+  
+  Vemos lista de base de datos
+  ```
+  show dbs
+  ```
+  Usamos una base de datos
+  ```
+  use <nombre-de-la-base-de-datos>
+  ```
+  Lista de colecciones dentro de la base de datos
+  ```
+  show collections
+  ```
+  Muestra los índices de la colección
+  ```
+  db.cursos.getIndexes()
+  ```
+  Creamos un índice de texto en el campo de cursos que el nuevo index es por nombre.
+  ```
+  db.cursos.createIndex({nombre: "text"})
+  db.cursos.getIndexes()
+  ```
+  Hacemos un filtro de búsqueda con el índice creado
+  ```
+  db.cursos.find({$text: {$search: "aws"}}, {nombre: 1})
+  ```
+
+
