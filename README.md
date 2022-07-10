@@ -456,4 +456,6 @@ db.survey.find(
 
   ![](https://static.platzi.com/media/user_upload/nexus-architecture-3669727c-100b-4d2b-baf7-39f51f48ce39.jpg)
 
+  Despues de terminal continuar con [Curso de Node.js: Base de Datos con MongoDB y WebSockets](https://github.com/jpmjim/CNodejsBDMongoyWebSockets)
+
 
